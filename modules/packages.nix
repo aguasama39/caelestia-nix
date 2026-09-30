@@ -13,7 +13,6 @@
     starship
 
     rmpc
-    mpc-cli
     mpd
     playerctl
 
