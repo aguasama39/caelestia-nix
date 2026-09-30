@@ -6,6 +6,7 @@
     ./home/foot.nix
     ./home/hyprland.nix
     ./home/mpd.nix
+    ./home/zen-theme.nix
   ];
 
   home.username = "paulcho";
@@ -21,7 +22,12 @@
 
     cli = {
       enable = true;
-      settings.theme.enableGtk = true;
+      settings.theme = {
+        enableGtk = true;
+        enableQt = true;
+        enableChromium = true;
+        postHook = "zen-theme-sync";
+      };
     };
   };
 
