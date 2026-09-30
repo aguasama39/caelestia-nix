@@ -22,7 +22,7 @@ in
     mpd
 
     thunar
-    xfce.thunar-archive-plugin
+    thunar-archive-plugin
 
     fastfetch
     cmatrix-git
