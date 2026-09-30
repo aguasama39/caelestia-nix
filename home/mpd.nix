@@ -18,7 +18,4 @@
     enable = true;
   };
 
-  home.packages = with pkgs; [
-    mpc-cli
-  ];
 }
