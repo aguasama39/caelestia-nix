@@ -5,6 +5,7 @@
     ./hardware-configuration.nix
     ./modules/nvidia.nix
     ./modules/login.nix
+    ./modules/packages.nix
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -28,6 +29,13 @@
   programs.fish.enable = true;
   programs.hyprland.enable = true;
 
+  programs.thunar = {
+    enable = true;
+    plugins = with pkgs.xfce; [
+      thunar-archive-plugin
+    ];
+  };
+
   xdg.portal = {
     enable = true;
     extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
@@ -46,38 +54,7 @@
     pulse.enable = true;
   };
 
-  environment.systemPackages = with pkgs; [
-    git
-    curl
-    wget
-    brave
-    foot
-    fish
-    starship
-    rmpc
-    mpc-cli
-    mpd
-    playerctl
-    wl-clipboard
-    cliphist
-    brightnessctl
-    pavucontrol
-    networkmanagerapplet
-    blueman
-    nautilus
-    fastfetch
-    btop
-    ripgrep
-    jq
-    unzip
-    noto-fonts
-    noto-fonts-cjk-sans
-    noto-fonts-color-emoji
-    nerd-fonts.iosevka-term
-  ];
-
   fonts.fontconfig.enable = true;
-
   nixpkgs.config.allowUnfree = true;
 
   system.stateVersion = "26.05";
