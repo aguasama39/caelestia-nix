@@ -1,5 +1,10 @@
 { pkgs, inputs, ... }:
 
+let
+  cmatrix-git = pkgs.callPackage ../packages/cmatrix-git.nix {
+    cmatrix-src = inputs.cmatrix-src;
+  };
+in
 {
   environment.systemPackages = with pkgs; [
     git
@@ -20,6 +25,7 @@
     xfce.thunar-archive-plugin
 
     fastfetch
+    cmatrix-git
     pciutils
     nano
     ffmpeg
