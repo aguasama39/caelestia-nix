@@ -3,8 +3,8 @@
 {
   environment.systemPackages = with pkgs; [
     git
-    curl
     wget
+    curl
 
     brave
     inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
@@ -22,14 +22,23 @@
     xfce.thunar-archive-plugin
     file-roller
 
+    fastfetch
+    pciutils
+    nano
+    ffmpeg
+    cifs-utils
+    unrar
+    proton-vpn-cli
+    gearlever
+    nicotine-plus
+    pavucontrol
+
     wl-clipboard
     cliphist
     brightnessctl
-    pavucontrol
     networkmanagerapplet
     blueman
 
-    fastfetch
     btop
     ripgrep
     jq
