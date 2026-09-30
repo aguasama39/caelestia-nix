@@ -18,6 +18,8 @@
 
   programs.caelestia = {
     enable = true;
+
+    # Hyprland's Lua config starts Caelestia on session startup.
     systemd.enable = false;
 
     cli = {
@@ -34,7 +36,9 @@
   programs.fish = {
     enable = true;
     interactiveShellInit = ''
+      set -g fish_greeting
       starship init fish | source
+      fastfetch
     '';
   };
 
