@@ -31,15 +31,7 @@
     nicotine-plus
     pavucontrol
 
-    wl-clipboard
-    cliphist
-    brightnessctl
-    blueman
 
-    btop
-    ripgrep
-    jq
-    unzip
 
     noto-fonts
     noto-fonts-cjk-sans
