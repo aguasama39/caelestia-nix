@@ -40,6 +40,6 @@
 
   home.sessionVariables = {
     TERMINAL = "foot";
-    BROWSER = "brave";
+    BROWSER = "zen";
   };
 }
