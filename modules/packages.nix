@@ -19,7 +19,6 @@
 
     thunar
     xfce.thunar-archive-plugin
-    file-roller
 
     fastfetch
     pciutils
