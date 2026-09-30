@@ -12,7 +12,7 @@
   };
 
   fileSystems."/mnt/reinas" = {
-    device = "//192.168.1.209/Medias";
+    device = "//192.168.1.209/Media";
     fsType = "cifs";
     options = [
       "credentials=/etc/samba/credentials"
