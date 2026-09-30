@@ -15,7 +15,6 @@
     rmpc
     mpc
     mpd
-    playerctl
 
     thunar
     xfce.thunar-archive-plugin
