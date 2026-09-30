@@ -26,6 +26,7 @@ in
 
     fastfetch
     cmatrix-git
+    cbonsai
     pciutils
     nano
     ffmpeg
