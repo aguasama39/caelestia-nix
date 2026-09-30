@@ -32,9 +32,7 @@
 
   programs.thunar = {
     enable = true;
-    plugins = with pkgs.xfce; [
-      thunar-archive-plugin
-    ];
+    plugins = with pkgs.xfce; [ thunar-archive-plugin ];
   };
 
   xdg.portal = {
@@ -54,6 +52,5 @@
 
   fonts.fontconfig.enable = true;
   nixpkgs.config.allowUnfree = true;
-
   system.stateVersion = "26.05";
 }
