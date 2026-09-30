@@ -3,12 +3,15 @@
 {
   imports = [
     ./hardware-configuration.nix
+    ./modules/bluetooth.nix
+    ./modules/drives.nix
+    ./modules/fish.nix
+    ./modules/flatpak.nix
     ./modules/nvidia.nix
-    ./modules/login.nix
     ./modules/packages.nix
+    ./modules/system.nix
+    ./modules/login.nix
   ];
-
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -23,10 +26,8 @@
   users.users.paulcho = {
     isNormalUser = true;
     extraGroups = [ "networkmanager" "wheel" "video" "audio" ];
-    shell = pkgs.fish;
   };
 
-  programs.fish.enable = true;
   programs.hyprland.enable = true;
 
   programs.thunar = {
@@ -43,9 +44,6 @@
 
   security.polkit.enable = true;
   services.gnome.gnome-keyring.enable = true;
-
-  hardware.bluetooth.enable = true;
-  hardware.bluetooth.powerOnBoot = true;
 
   services.pipewire = {
     enable = true;
