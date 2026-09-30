@@ -5,19 +5,15 @@
     enable = true;
 
     settings = {
-      "$mod" = "SUPER";
-      "$terminal" = "foot";
-      "$browser" = "brave";
-
       exec-once = [
         "caelestia shell -d"
       ];
 
       bind = [
-        "$mod, T, exec, $terminal"
-        "$mod, B, exec, $browser"
-        "$mod, Q, killactive"
-        "$mod SHIFT, S, exec, caelestia screenshot"
+        "SUPER, T, exec, foot"
+        "SUPER, B, exec, zen"
+        "SUPER, Q, killactive"
+        "SUPER SHIFT, S, exec, caelestia screenshot"
       ];
 
       input = {
