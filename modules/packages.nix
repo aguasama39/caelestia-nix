@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 
 {
   environment.systemPackages = with pkgs; [
@@ -7,6 +7,7 @@
     wget
 
     brave
+    inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
     foot
 
     fish
