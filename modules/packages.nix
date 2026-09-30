@@ -34,7 +34,6 @@
     wl-clipboard
     cliphist
     brightnessctl
-    networkmanagerapplet
     blueman
 
     btop
