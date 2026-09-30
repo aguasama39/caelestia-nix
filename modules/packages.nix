@@ -31,7 +31,6 @@ in
     nano
     ffmpeg
     cifs-utils
-    unrar
     proton-vpn-cli
     gearlever
     nicotine-plus
