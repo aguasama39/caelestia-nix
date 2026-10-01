@@ -51,6 +51,6 @@
     hl.bind("SUPER + B", hl.dsp.exec_cmd(browser))
     hl.bind("SUPER + E", hl.dsp.exec_cmd("thunar"))
     hl.bind("SUPER + Q", hl.dsp.window.close())
-    hl.bind("SUPER + SHIFT + S", hl.dsp.exec_cmd("caelestia screenshot"))
+    hl.bind("SUPER + SHIFT + S", hl.dsp.global("caelestia:screenshot"))
   '';
 }
