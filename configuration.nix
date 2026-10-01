@@ -13,6 +13,8 @@
     ./modules/login.nix
   ];
 
+  boot.kernelParams = [ "mem_sleep_default=s2idle" ];
+
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
