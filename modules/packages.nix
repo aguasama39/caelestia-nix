@@ -44,6 +44,6 @@ in
     noto-fonts
     noto-fonts-cjk-sans
     noto-fonts-color-emoji
-    nerd-fonts.iosevka-term
+    nerd-fonts.caskaydia-cove
   ];
 }
