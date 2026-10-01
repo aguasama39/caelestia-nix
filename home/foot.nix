@@ -22,7 +22,7 @@
   '';
 
   xdg.configFile."caelestia/templates/foot.ini".text = ''
-    [colors]
+    [colors-dark]
     foreground={{ onSurface.hex }}
     background={{ surface.hex }}
     regular0={{ term0.hex }}
