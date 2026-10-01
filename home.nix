@@ -42,9 +42,25 @@
     '';
   };
 
-  # Make GTK/libadwaita applications prefer the dark variant.
+  # Keep GTK applications consistently dark. Caelestia can still generate
+  # dynamic colors for the shell and other supported applications.
+  gtk = {
+    enable = true;
+    theme = {
+      name = "Adwaita-dark";
+      package = pkgs.gnome-themes-extra;
+    };
+    gtk3.extraConfig = {
+      gtk-application-prefer-dark-theme = true;
+    };
+    gtk4.extraConfig = {
+      gtk-application-prefer-dark-theme = true;
+    };
+  };
+
   dconf.settings."org/gnome/desktop/interface" = {
     color-scheme = "prefer-dark";
+    gtk-theme = "Adwaita-dark";
   };
 
   home.pointerCursor = {
