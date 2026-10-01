@@ -49,6 +49,7 @@
     hl.bind("SUPER + SUPER_L", hl.dsp.global("caelestia:launcher"), { release = true })
     hl.bind("SUPER + T", hl.dsp.exec_cmd(terminal))
     hl.bind("SUPER + B", hl.dsp.exec_cmd(browser))
+    hl.bind("SUPER + E", hl.dsp.exec_cmd("thunar"))
     hl.bind("SUPER + Q", hl.dsp.window.close())
     hl.bind("SUPER + SHIFT + S", hl.dsp.exec_cmd("caelestia screenshot"))
   '';
