@@ -52,5 +52,9 @@
     hl.bind("SUPER + E", hl.dsp.exec_cmd("thunar"))
     hl.bind("SUPER + Q", hl.dsp.window.close())
     hl.bind("SUPER + SHIFT + S", hl.dsp.global("caelestia:screenshot"))
+
+    for i = 1, 9 do
+      hl.bind("SUPER + " .. i, hl.dsp.focus({ workspace = tostring(i) }))
+    end
   '';
 }
