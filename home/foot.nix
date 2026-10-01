@@ -10,7 +10,7 @@
     font=CaskaydiaCove Nerd Font Mono:size=11
     shell=fish
     pad=8x8
-
+    
     [scrollback]
     lines=10000
 
@@ -23,6 +23,7 @@
 
   xdg.configFile."caelestia/templates/foot.ini".text = ''
     [colors-dark]
+    alpha=0.87
     foreground={{ onSurface.hex }}
     background={{ surface.hex }}
     regular0={{ term0.hex }}
