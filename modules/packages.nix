@@ -44,6 +44,9 @@ in
     noto-fonts
     noto-fonts-cjk-sans
     noto-fonts-color-emoji
+  ];
+
+  fonts.packages = with pkgs; [
     nerd-fonts.caskaydia-cove
   ];
 }
