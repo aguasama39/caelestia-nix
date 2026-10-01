@@ -42,6 +42,11 @@
     '';
   };
 
+  # Make GTK/libadwaita applications prefer the dark variant.
+  dconf.settings."org/gnome/desktop/interface" = {
+    color-scheme = "prefer-dark";
+  };
+
   home.pointerCursor = {
     gtk.enable = true;
     x11.enable = true;
