@@ -38,6 +38,8 @@ in
     gearlever
     nicotine-plus
     pavucontrol
+    glib
+    gsettings-desktop-schemas
 
 
 
