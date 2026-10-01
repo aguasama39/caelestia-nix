@@ -7,7 +7,7 @@
     include=~/.local/state/caelestia/theme/foot.ini
 
     [main]
-    font=IosevkaTerm Nerd Font Mono:size=11
+    font=CaskaydiaCove Nerd Font:size=11
     shell=fish
     pad=8x8
 
